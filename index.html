@@ -1,64 +1,356 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html class="cspio">
 <head>
-    <title>Estademly | Login</title>
-    <meta charset="UTF-8">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+	<title>Call Me!</title>
 
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="logo.png" sizes="180x180">
+    <link rel="icon" href="logo.png" sizes="32x32" type="image/jpg">
+    <link href="styling.css" rel="stylesheet">
+    <link href="newStyle.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.cdnfonts.com/css/bank-gothic" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<meta name="generator" content="comingsoonpage.com 1.0.0" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="logo.jpg">
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="My Coming Soon Page" />
+	<meta property="og:description" content="" />
+	
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap and default Style -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/style.css">
 
-    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!-- Google Fonts -->
+	<link class="gf-headline" href='https://fonts.googleapis.com/css?family=Pacifico:400&subset=' rel='stylesheet' type='text/css'>
+			
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+	
+	<!-- Calculated Styles -->
+	<style type="text/css">
+		
+	@import url('https://fonts.cdnfonts.com/css/bank-gothic');
+	
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
 
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	body {
+		height:100%;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	html{
+		height:100%;
+		background: #ffffff url(background.jpg); no-repeat center bottom fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	#cspio-page{
+		background-color: rgba(0,0,0,0);
+	}
+	
+	.flexbox #cspio-page{
+		align-items: center;
+		justify-content: center;
+	}
 
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	.cspio body{
+		background: transparent;
+	}
 
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	.cspio body, .cspio body p{
+        font-family: Helvetica, Arial, sans-serif;
+		font-weight: 400;
+        font-size: 20px;
+        line-height: 1.50em;
+        color:#ffffff;
+    }
 
-    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	::-webkit-input-placeholder {
+		font-family:Helvetica, Arial, sans-serif;
+		font-weight: 400;	
+	}
 
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="login.css">
+	::-moz-placeholder {
+		font-family:Helvetica, Arial, sans-serif;
+		font-weight: 400;
+	} 
 
-    <meta name="robots" content="noindex, follow">
-    <script nonce="fa84f3f9-d684-4410-8d0e-7be1232a13c5">(function(w,d){!function(Y,Z,_,ba){Y[_]=Y[_]||{};Y[_].executed=[];Y.zaraz={deferred:[],listeners:[]};Y.zaraz.q=[];Y.zaraz._f=function(bb){return function(){var bc=Array.prototype.slice.call(arguments);Y.zaraz.q.push({m:bb,a:bc})}};for(const bd of["track","set","debug"])Y.zaraz[bd]=Y.zaraz._f(bd);Y.zaraz.init=()=>{var be=Z.getElementsByTagName(ba)[0],bf=Z.createElement(ba),bg=Z.getElementsByTagName("title")[0];bg&&(Y[_].t=Z.getElementsByTagName("title")[0].text);Y[_].x=Math.random();Y[_].w=Y.screen.width;Y[_].h=Y.screen.height;Y[_].j=Y.innerHeight;Y[_].e=Y.innerWidth;Y[_].l=Y.location.href;Y[_].r=Z.referrer;Y[_].k=Y.screen.colorDepth;Y[_].n=Z.characterSet;Y[_].o=(new Date).getTimezoneOffset();if(Y.dataLayer)for(const bk of Object.entries(Object.entries(dataLayer).reduce(((bl,bm)=>({...bl[1],...bm[1]})),{})))zaraz.set(bk[0],bk[1],{scope:"page"});Y[_].q=[];for(;Y.zaraz.q.length;){const bn=Y.zaraz.q.shift();Y[_].q.push(bn)}bf.defer=!0;for(const bo of[localStorage,sessionStorage])Object.keys(bo||{}).filter((bq=>bq.startsWith("_zaraz_"))).forEach((bp=>{try{Y[_]["z_"+bp.slice(7)]=JSON.parse(bo.getItem(bp))}catch{Y[_]["z_"+bp.slice(7)]=bo.getItem(bp)}}));bf.referrerPolicy="origin";bf.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(Y[_])));be.parentNode.insertBefore(bf,be)};["complete","interactive"].includes(Z.readyState)?zaraz.init():Y.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>
+	:-ms-input-placeholder {
+		font-family:Helvetica, Arial, sans-serif;
+		font-weight: 400;
+	} 
+
+	:-moz-placeholder {
+		font-family:Helvetica, Arial, sans-serif;
+		font-weight: 400;
+	}
+
+    .cspio h1, .cspio h2, .cspio h3, .cspio h4, .cspio h5, .cspio h6{
+        font-family: 'Bank Gothic';
+        color:#ffffff;
+    }
+
+	#cspio-headline{
+		font-family: 'Bank Gothic';
+		font-weight: 400;
+		font-size: 48px;
+		color:#ffffff;
+		line-height: 1.00em;
+	}
+
+	.cspio button{
+        font-family: Helvetica, Arial, sans-serif;
+		font-weight: 400;
+    }
+	
+    .cspio a, .cspio a:visited, .cspio a:hover, .cspio a:active{
+		color: #ffffff;
+	}
+
+	#cspio-socialprofiles a {
+	  color: #ffffff;
+	}
+	.cspio .btn-primary,
+	.cspio .btn-primary:focus,
+	.gform_button,
+	#mc-embedded-subscribe, .submit-button {
+		color: black;
+		text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+		background-color: #ffffff;
+		background-image: -moz-linear-gradient(top,#ffffff,#d9d9d9);
+		background-image: -ms-linear-gradient(top,#ffffff,#d9d9d9);
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#d9d9d9));
+		background-image: -webkit-linear-gradient(top,#ffffff,#d9d9d9);
+		background-image: -o-linear-gradient(top,#ffffff,#d9d9d9);
+		background-image: linear-gradient(top,#ffffff,#d9d9d9);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d9d9d9', GradientType=0);
+		border-color: #d9d9d9 #d9d9d9 #b3b3b3;
+		border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+		*background-color: #d9d9d9;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+
+	.cspio .btn-primary:hover,
+	.cspio .btn-primary:active,
+	.cspio .btn-primary.active,
+	.cspio .btn-primary.disabled,
+	.cspio .btn-primary[disabled],
+	.cspio .btn-primary:focus:hover,
+	.cspio .btn-primary:focus:active,
+	.cspio .btn-primary:focus.active,
+	.cspio .btn-primary:focus.disabled,
+	.cspio .btn-primary:focus[disabled],
+	#mc-embedded-subscribe:hover,
+	#mc-embedded-subscribe:active,
+	#mc-embedded-subscribe.active,
+	#mc-embedded-subscribe.disabled,
+	#mc-embedded-subscribe[disabled] {
+		background-color: #d9d9d9;
+		*background-color: #cccccc;
+	}
+
+	.cspio .btn-primary:active,
+	.cspio .btn-primary.active,
+	.cspio .btn-primary:focus:active,
+	.cspio .btn-primary:focus.active,
+	.gform_button:active,
+	.gform_button.active,
+	#mc-embedded-subscribe:active,
+	#mc-embedded-subscribe.active {
+		background-color: #bfbfbf;
+	}
+
+	.form-control,
+	.progress {
+		background-color: rgba(255, 255, 255, 0.85);
+	}
+
+	#cspio-progressbar span,
+	.countdown_section {
+		color: black;
+		text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+	}
+
+	.cspio .btn-primary:hover,
+	.cspio .btn-primary:active {
+		color: black;
+		text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+		border-color: #e6e6e6;
+	}
+
+	.cspio input[type='text']:focus {
+		webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
+		-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
+	}
+    
+    #cspio-content {
+		display: none;
+		max-width: 600px;
+		background-color: #000000;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		background-color:transparent;
+	}
+    
+	.cspio .progress-bar,
+	.countdown_section,
+	.cspio .btn-primary,
+	.cspio .btn-primary:focus,
+	.gform_button {
+		background-image: none;
+		text-shadow: none;
+	}
+
+	.cspio input,
+	.cspio input:focus {
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+							
+	#cspio-page{
+	    background: -moz-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
+	    background: -webkit-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
+	    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
+	}
+
+	.cspio body{
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 7%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.23) 100%); 
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 7%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.23) 100%); 
+		background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 7%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.23) 100%); 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3b000000',GradientType=1 ); 
+	}
+
+	#cspio-subscribe-btn{
+	    background:transparent;
+	    border: 1px solid #fff !important;
+	    color: #fff;
+	}
+
+	#cspio-subscribe-btn:hover{
+	    background: rgba(255,255,255,0.2);
+	    color: #fff;
+	}
+
+	#cspio-credit img{
+		margin-left:auto;
+		margin-right:auto;
+		width:125px;
+		    margin-top: -4px;
+	}
+
+	#cspio-credit {
+		font-size:11px;
+	}
+
+	</style>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Modernizr -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	
+	<!-- Google Analytics Code Goes Here-->
 </head>
 <body>
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <!-- Tabs Titles -->
-            <h2 class="active"> Sign In </h2>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="home" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </symbol>
+        <symbol id="cart" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </symbol>
+    </svg>
 
-            <!-- Icon -->
-            <div class="fadeIn first">
-                <img src="estademly.jpg" id="icon" alt="User Icon" />
-            </div>
-
-            <!-- Login Form -->
-            <form action="Start.html" method="post">
-                <label for="email"><b>Email</b></label><br>
-                <input type="text" id="login" class="fadeIn second" name="login">
-                <label for="password"><b>Password</b></label><br>
-                <input type="text" id="password" class="fadeIn third" name="login">
-                <input type="submit" class="fadeIn fourth" value="Login">
 
 
-            </form>
+	<div id="cspio-page">
+		<div id="cspio-content">
+			
+			    				
+			<h1 id="cspio-headline">Mahmoud Ali</h1>			    				
+			
+			<div id="cspio-description">.NET Development Engineer</div>			    				
+			
+			<!-- <form id="cspio-form" action="newsletter.php" method="get">
+				<div id="cspio-field-wrapper">
+					<div class="row">
+						<div class="col-md-12 seperate"><div class="input-group"><input id="cspio-email" name="EMAIL" class="form-control input-lg form-el" type="email" placeholder="Email" required/>
+					<span class="input-group-btn"><button id="cspio-subscribe-btn" type="submit" class="btn btn-lg btn-primary form-el noglow">Notify Me</button></span></div></div>
+					</div>
+				</div>
+			</form> -->
+			    						    			    								    			    			    				
+			<div id="cspio-socialprofiles">
+				<!-- <a href="https://www.facebook.com/mahmoud.aly.581/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>		 -->
+				<a href="https://github.com/mahmoud-alii" target="_blank"><i class="fa fa-github fa-2x"></i></a>	
+				<a href="https://www.instagram.com/mahmoudalysaad/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+				<a href="https://www.snapchat.com/add/mahmoudali3?share_id=ggTjuZWzhrI&locale=en-GB" target="_blank"><i class="fa fa-snapchat fa-2x"></i></a>			
+				<a href="mailto: mahmoudaliisaad@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>			
+			</div>
 
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-                <a class="underlineHover" href="#">Forgot Password?</a>
-            </div>
+									    									    			    			    							    			     			    		
+		</div><!-- end of #cspio-content -->
+	</div>
 
-        </div>
-    </div>
 
-</body>
+	<script>
+		// Animate Delay
+		setTimeout(function(){ jQuery("#cspio-content").show().addClass('animated fadeIn'); }, 250);
+
+		// Reseize	
+		function resize(){
+				$('head').append("<style id='form-style' type='text/css'></style>");
+				$('#form-style').html('.cspio .input-group-btn, .cspio .input-group{display:block;width:100%;}.cspio #cspio-subscribe-btn{margin-left:0;width:100%;display:block;}.cspio .input-group .form-control:first-child, .cspio .input-group-addon:first-child, .cspio .input-group-btn:first-child>.btn, .cspio .input-group-btn:first-child>.dropdown-toggle, .cspio .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {border-bottom-right-radius: 4px;border-top-right-radius: 4px;}.cspio .input-group .form-control:last-child, .cspio .input-group-addon:last-child, .cspio .input-group-btn:last-child>.btn, .cspio .input-group-btn:last-child>.dropdown-toggle, .cspio .input-group-btn:first-child>.btn:not(:first-child) {border-bottom-left-radius: 4px;border-top-left-radius: 4px;}');
+		}
+		
+		$('#cspio-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+			function(){
+				var width = $('#cspio-field-wrapper').width();
+				if(width < 480 && width != 0){
+					resize();
+				}
+			}
+		);
+	</script>
+
+	</body>
 </html>
