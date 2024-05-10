@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Device Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .container {
+      margin-top: 50px;
+    }
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: auto; /* Make card content scrollable */
+      max-height: 400px; /* Set max height for the cards */
+    }
+    canvas {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center">Medical Device Dashboard</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total Devices</h5>
+          <canvas id="totalDevicesChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Active Listings</h5>
+          <canvas id="activeListingsChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery (Optional) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  // Chart.js
+  var totalDevicesCtx = document.getElementById('totalDevicesChart').getContext('2d');
+  var activeListingsCtx = document.getElementById('activeListingsChart').getContext('2d');
+  
+  var totalDevicesChart = new Chart(totalDevicesCtx, {
+    type: 'doughnut',
+    data: {
+      labels: ['In Stock', 'Sold', 'Under Repair'],
+      datasets: [{
+        label: 'Total Devices',
+        data: [60, 25, 15],
+        backgroundColor: [
+          '#36a2eb',
+          '#ff6384',
+          '#ffce56'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+    }
+  });
+
+  var activeListingsChart = new Chart(activeListingsCtx, {
+    type: 'bar',
+    data: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+      datasets: [{
+        label: 'Active Listings',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: '#4bc0c0',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+</script>
+</body>
+</html>
